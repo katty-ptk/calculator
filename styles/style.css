@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background-image: linear-gradient(200deg, #7a6a6a, #d1afaf);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 600px;
+  border: 1px solid #4d4d4d;
+  border-radius: 50px;
+  background-color: #947c7c;
+  box-shadow: 5px 5px 10px #353535;
+}
+.container .result {
+  position: absolute;
+  background: #a58b8b;
+  width: 350px;
+  height: 150px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  text-align: center;
+}
+.container .result #result {
+  margin-top: 70px;
+  font-style: italic;
+}
+.container .buttons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0px;
+  height: 450px;
+  width: 350px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.container .buttons .row-1, .container .buttons .row-2, .container .buttons .row-3, .container .buttons .row-4 {
+  display: flex;
+  flex-direction: row;
+}
+.container .buttons .row-1 > *, .container .buttons .row-2 > *, .container .buttons .row-3 > *, .container .buttons .row-4 > * {
+  width: 87.5px;
+  height: 112.5px;
+  background: transparent;
+  border: none;
+  font-size: 1.5em;
+  font-family: "Lora", serif;
+  transition: all 400ms ease-in-out;
+}
+.container .buttons .row-1 > *:hover, .container .buttons .row-2 > *:hover, .container .buttons .row-3 > *:hover, .container .buttons .row-4 > *:hover {
+  background-color: #a58b8b;
+}
+.container .buttons .border-radius:first-child {
+  border-bottom-left-radius: 50px;
+}
+.container .buttons .border-radius:last-child {
+  border-bottom-right-radius: 50px;
+}/*# sourceMappingURL=style.css.map */
