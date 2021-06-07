@@ -22,7 +22,7 @@ body {
   border: 1px solid #4d4d4d;
   border-radius: 50px;
   background-color: #947c7c;
-  box-shadow: 5px 5px 10px #353535;
+  box-shadow: 10px 5px 10px #353535;
 }
 .container .result {
   position: absolute;
@@ -33,9 +33,18 @@ body {
   border-top-right-radius: 50px;
   text-align: center;
 }
-.container .result #result {
-  margin-top: 70px;
+.container .result div {
+  margin-top: 45px;
+  align-items: center;
+  text-align: center;
   font-style: italic;
+  height: 70px;
+}
+.container .result div #result {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .container .buttons {
   position: absolute;
@@ -58,6 +67,7 @@ body {
   border: none;
   font-size: 1.5em;
   font-family: "Lora", serif;
+  font-weight: bold;
   transition: all 400ms ease-in-out;
 }
 .container .buttons .row-1 > *:hover, .container .buttons .row-2 > *:hover, .container .buttons .row-3 > *:hover, .container .buttons .row-4 > *:hover {

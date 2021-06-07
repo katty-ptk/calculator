@@ -8,7 +8,7 @@
     border: 1px solid $border;
     border-radius: 50px;
     background-color: $containerBg;
-    box-shadow: 5px 5px 10px rgb(53, 53, 53);
+    box-shadow: 10px 5px 10px rgb(53, 53, 53);
 
     .result {
         position: absolute;
@@ -19,18 +19,25 @@
         border-top-right-radius: 50px;
         text-align: center;
 
-        #result {
-            margin-top: 70px;
+        div {
+            margin-top: 45px;
+            align-items: center;
+            text-align: center;
             font-style: italic;
+            height: 70px;
+
+            #result {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 
     .buttons {
         position: absolute;
         display: flex;
-        // justify-content: center;
-        // text-align: center;
-        // align-items: center;
         flex-direction: column;
         bottom: 0px;
         height: 450px;
@@ -49,6 +56,7 @@
                 border: none;
                 font-size: 1.5em;
                 font-family: 'Lora', serif;
+                font-weight: bold;
                 transition: all 400ms ease-in-out;
 
                 &:hover {
